@@ -1,0 +1,22 @@
+:root {
+    /* font-family */
+    --font-logo: 'Roboto', sans-serif;
+    --font-heading-en: 'Orbitron', sans-serif;
+    --font-text: 'Noto Sans JP', sans-serif;
+
+    /* color */
+    --color-background: #FFFFFF;
+    --color-heading: #0b185f;
+    --color-text: #111111;
+    --color-text-muted: #666666;
+
+    --color-card-heading: #FFFFFF;
+    --color-card-text: #111111;
+
+    --color-border: #0b185f;
+    --color-card-bg: #FFFFFF;
+
+    /* shadow */
+    --shadow-float: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
