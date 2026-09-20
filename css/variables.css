@@ -11,10 +11,11 @@
     --color-text-muted: #666666;
 
     --color-card-heading: #FFFFFF;
-    --color-card-text: #111111;
+    --color-card-text: #FFFFFF;
+    --color-card-border: rgb(214, 214, 214);
 
     --color-border: #0b185f;
-    --color-card-bg: #FFFFFF;
+    --color-card-background: #161616;
 
     /* shadow */
     --shadow-float: 0 4px 16px rgba(0, 0, 0, 0.1);

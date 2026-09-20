@@ -85,6 +85,20 @@
         </div>
 
         <!-- ----------------------------------------
+             YouTube動画埋め込み（紹介動画・VPなど）
+             不要な場合はこのブロックごと削除
+             動画IDはYouTubeの共有URL（youtu.be/【ここ】 または watch?v=【ここ】）の部分
+        ---------------------------------------- -->
+        <!--
+        <div class="video-embed-wrap">
+            <div class="figure-caption">【動画キャプション（例：紹介動画）】</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/【動画ID】" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        -->
+
+        <!-- ----------------------------------------
              追加画像（複数枚をグリッドで並べる）
              不要な場合はこのブロックごと削除。枚数は自由に増減してOK
         ---------------------------------------- -->

@@ -66,7 +66,7 @@
                             <div class="card-body">
                                 <div class="card-meta">
                                     <h3 class="card-title">よくある間違い〇✕クイズ</h3>
-                                    <time class="card-date">2025.08</time>
+                                    <time class="card-date">2025.08 - Now</time>
                                 </div>
                                 <ul class="card-tags">
                                     <li>HTML</li>
