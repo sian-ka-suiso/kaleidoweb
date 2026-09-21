@@ -42,7 +42,7 @@
                 <h2 class="section-title">Web</h2>
                 <ul class="card-list">
                     <li>
-                        <a href="works/web/kiten_hp.php" class="work-card">
+                        <a href="works/web/kiten_hp" class="work-card">
                             <div class="card-thumb">
                                 <img src="images/kiten_hp.webp" alt="「KIT eSports Project」ホームページ">
                             </div>
@@ -61,7 +61,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="works/web/oxquiz.php" class="work-card">
+                        <a href="works/web/oxquiz" class="work-card">
                             <div class="card-thumb">
                                 <img src="images/oxquiz.webp" alt="よくある間違い〇✕クイズ">
                             </div>
@@ -81,7 +81,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="works/web/himenoyu.php" class="work-card">
+                        <a href="works/web/himenoyu" class="work-card">
                             <div class="card-thumb">
                                 <img src="images/himenoyu.webp" alt="比咩の湯">
                             </div>
