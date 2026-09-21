@@ -34,6 +34,7 @@
                     <a href="#works-web" class="tab-link">Web</a>
                     <a href="#works-image" class="tab-link">Image</a>
                     <a href="#works-video" class="tab-link">Video</a>
+                    <a href="#works-other" class="tab-link">Other</a>
                 </nav>
             </div>
 
@@ -43,30 +44,31 @@
                     <li>
                         <a href="works/web/kiten_hp.php" class="work-card">
                             <div class="card-thumb">
-                                <img src="images/kiten_hp.png" alt="「KIT eSports Project」ホームページ">
+                                <img src="images/kiten_hp.webp" alt="「KIT eSports Project」ホームページ">
                             </div>
                             <div class="card-body">
                                 <div class="card-meta">
-                                    <h3 class="card-title">「KIT eSports Project」ホームページ</h3>
-                                    <time class="card-date">2025.10</time>
+                                    <h3 class="card-title">「KIT eSports Project」HP制作・運用</h3>
+                                    <time class="card-date">2025.03 - Present</time>
                                 </div>
                                 <ul class="card-tags">
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>JavaScript</li>
+                                    <li>PHP</li>
                                 </ul>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="work-card">
+                        <a href="works/web/oxquiz.php" class="work-card">
                             <div class="card-thumb">
-                                <img src="images/oxquiz.png" alt="よくある間違い〇✕クイズ">
+                                <img src="images/oxquiz.webp" alt="よくある間違い〇✕クイズ">
                             </div>
                             <div class="card-body">
                                 <div class="card-meta">
-                                    <h3 class="card-title">よくある間違い〇✕クイズ</h3>
-                                    <time class="card-date">2025.08 - Now</time>
+                                    <h3 class="card-title">「よくある間違い〇✕クイズ」開発・運用</h3>
+                                    <time class="card-date">2024.06 - Present</time>
                                 </div>
                                 <ul class="card-tags">
                                     <li>HTML</li>
@@ -79,14 +81,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="work-card">
+                        <a href="works/web/himenoyu.php" class="work-card">
                             <div class="card-thumb">
-                                <img src="images/himenoyu.png" alt="比咩の湯">
+                                <img src="images/himenoyu.webp" alt="比咩の湯">
                             </div>
                             <div class="card-body">
                                 <div class="card-meta">
-                                    <h3 class="card-title">比咩の湯</h3>
-                                    <time class="card-date">2025.04</time>
+                                    <h3 class="card-title">「比咩の湯」HPリニューアル対応</h3>
+                                    <time class="card-date">2026.03</time>
                                 </div>
                                 <ul class="card-tags">
                                     <li>HTML</li>
@@ -103,51 +105,19 @@
                 <h2 class="section-title">Image</h2>
                 <ul class="card-list">
                     <li>
-                        <a href="images/ssbu.png" class="work-card" target="_blank" rel="noopener noreferrer">
+                        <a href="#" class="work-card" target="_blank" rel="noopener">
                             <div class="card-thumb">
-                                <img src="images/ssbu.png" alt="工大祭スマブラ大会VPサムネイル">
+                                <img src="images/no-image.webp" alt="">
                             </div>
                             <div class="card-body">
                                 <div class="card-meta">
-                                    <h3 class="card-title">工大祭スマブラ大会VPサムネイル</h3>
-                                    <time class="card-date">2025.09</time>
+                                    <h3 class="card-title">準備中</h3>
+                                    <!-- <time class="card-date">2025.11</time> -->
                                 </div>
-                                <ul class="card-tags">
-                                    <li>Photoshop</li>
-                                    <li>Illustrator</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/kiten_logo.png" class="work-card" target="_blank" rel="noopener noreferrer">
-                            <div class="card-thumb">
-                                <img src="images/kiten_logo.png" alt="「KIT eSports Project」ロゴ">
-                            </div>
-                            <div class="card-body">
-                                <div class="card-meta">
-                                    <h3 class="card-title">「KIT eSports Project」ロゴ</h3>
-                                    <time class="card-date">2025.06</time>
-                                </div>
-                                <ul class="card-tags">
-                                    <li>Illustrator</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/meishi.png" class="work-card" target="_blank" rel="noopener noreferrer">
-                            <div class="card-thumb">
-                                <img src="images/meishi.png" alt="「KIT eSports Project」名刺">
-                            </div>
-                            <div class="card-body">
-                                <div class="card-meta">
-                                    <h3 class="card-title">「KIT eSports Project」名刺</h3>
-                                    <time class="card-date">2025.02</time>
-                                </div>
-                                <ul class="card-tags">
-                                    <li>Photoshop</li>
-                                </ul>
+                                <!-- <ul class="card-tags">
+                                    <li>Premiere Pro</li>
+                                    <li>After Effects</li>
+                                </ul> -->
                             </div>
                         </a>
                     </li>
@@ -164,46 +134,35 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-meta">
-                                    <h3 class="card-title">サンプル動画タイトル 01</h3>
-                                    <time class="card-date">2025.11</time>
+                                    <h3 class="card-title">準備中</h3>
+                                    <!-- <time class="card-date">2025.11</time> -->
                                 </div>
-                                <ul class="card-tags">
+                                <!-- <ul class="card-tags">
                                     <li>Premiere Pro</li>
                                     <li>After Effects</li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </a>
                     </li>
+                </ul>
+            </section>
+
+            <section id="works-other" class="works-section">
+                <h2 class="section-title">Other</h2>
+                <ul class="card-list">
                     <li>
-                        <a href="#" class="work-card" target="_blank" rel="noopener">
+                        <a href="" class="work-card" target="_blank" rel="noopener">
                             <div class="card-thumb">
                                 <img src="images/no-image.webp" alt="">
                             </div>
                             <div class="card-body">
                                 <div class="card-meta">
-                                    <h3 class="card-title">サンプル動画タイトル 02</h3>
-                                    <time class="card-date">2025.07</time>
+                                    <h3 class="card-title">準備中</h3>
+                                    <!-- <time class="card-date"></time> -->
                                 </div>
-                                <ul class="card-tags">
-                                    <li>Premiere Pro</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="work-card" target="_blank" rel="noopener">
-                            <div class="card-thumb">
-                                <img src="images/no-image.webp" alt="">
-                            </div>
-                            <div class="card-body">
-                                <div class="card-meta">
-                                    <h3 class="card-title">サンプル動画タイトル 03</h3>
-                                    <time class="card-date">2025.03</time>
-                                </div>
-                                <ul class="card-tags">
-                                    <li>Premiere Pro</li>
-                                    <li>After Effects</li>
-                                </ul>
+                                <!-- <ul class="card-tags">
+                                    <li></li>
+                                </ul> -->
                             </div>
                         </a>
                     </li>

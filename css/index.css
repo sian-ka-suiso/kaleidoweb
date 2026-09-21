@@ -12,7 +12,7 @@ body {
 main {
     width: 100%;
     margin-top: 110px;
-    padding: 0 12.0rem;
+    padding: 0 clamp(1.25rem, 6vw, 14rem);
 }
 
 .hero-section {
@@ -77,8 +77,10 @@ main {
 /* ===== works tree: Works > Web / Image / Video ===== */
 .section-head {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 .section-head h2 {
     font-family: var(--font-heading-en);
@@ -152,7 +154,7 @@ main {
 /* ===== card list ===== */
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(520px, 100%), 1fr));
     align-items: start;
     gap: 1.6rem;
     list-style: none;
@@ -253,9 +255,37 @@ main {
 }
 
 /* ===== responsive ===== */
+@media (max-width: 900px) {
+    .works-tree {
+        --tree-trunk-x: 1.6rem;
+        --tree-indent: 4rem;
+    }
+}
+
 @media (max-width: 640px) {
     .works-tree {
         --tree-trunk-x: 0.7rem;
         --tree-indent: 1.8rem;
+    }
+
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-head h2 {
+        font-size: 1.9rem;
+    }
+
+    .tree-root {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-text-en {
+        font-size: 1.2rem;
     }
 }
