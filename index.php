@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kaleidoのポートフォリオサイト">
-    <meta property="og:title" content="KIT eSports Project" />
+    <meta property="og:title" content="Kaleido Web" />
     <meta property="og:description" content="Kaleidoのポートフォリオサイト" />
     <meta property="og:image" content="" />
     <meta property="og:type" content="website" />
