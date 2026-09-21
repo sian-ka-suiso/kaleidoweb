@@ -19,31 +19,16 @@
 <body>
     <?php $base = '../../'; include __DIR__ . '/../../parts/header.php'; ?>
     <main>
-        <!-- ==============================================
-             【必須】作品ヒーロー画像
-             カード一覧のサムネと同じ画像を16:9で使用
-             （引き伸ばし・トリミングなしでそのまま収まる）
-             ============================================== -->
         <div class="work-hero">
             <img src="../../images/oxquiz.webp" alt="「よくある間違い〇✕クイズ」">
         </div>
-
-        <!-- 【必須】パンくず：category は works-web / works-image / works-video のいずれか -->
         <div class="breadcrumb"><a href="../../">Top</a> &gt; <a href="../../#works-web">Works</a> &gt; 「よくある間違い〇✕クイズ」開発・運用</div>
 
-        <!-- ==============================================
-             【必須】作品タイトル・制作年月
-             ============================================== -->
         <div class="work-heading">
             <h1 class="work-heading-title">「よくある間違い〇✕クイズ」開発・運用</h1>
             <time class="work-heading-date">2024.06 - Present</time>
         </div>
 
-        <!-- ==============================================
-             【必須】作品概要
-             項目は自由に増減してOK。不要な項目はdivごと削除
-             幅いっぱいに使いたい項目は class="work-overview-item wide" に
-             ============================================== -->
         <div class="work-overview">
             <h2 class="work-overview-heading">Overview</h2>
             <div class="work-overview-grid">
@@ -59,12 +44,10 @@
                     <span class="label">担当範囲</span>
                     <span class="value">デザイン・コーディング</span>
                 </div>
-                <!-- 公開URLがない場合はこの項目ごと削除 -->
                 <div class="work-overview-item">
                     <span class="label">アプリURL</span>
                     <span class="value"><a href="https://www.kaleidoweb.net/oxquiz/ctrl/index.php" target="_blank" rel="noopener noreferrer">よくある間違い〇✕クイズ</a></span>
                 </div>
-                <!-- GitHubリポジトリを公開しない場合はこの項目ごと削除 -->
                 <div class="work-overview-item">
                     <span class="label">GitHub</span>
                     <span class="value"><a href="https://github.com/sian-ka-suiso/OXquiz" target="_blank" rel="noopener noreferrer">OXquiz</a></span>
@@ -80,11 +63,6 @@
             </div>
         </div>
 
-        <!-- ==============================================
-             【必須】詳細説明
-             制作背景・工夫した点・苦労した点などを自由に記述
-             段落を分けたい場合は <p> を複製する
-             ============================================== -->
         <div class="work-description">
             <h2 class="work-description-heading">Details</h2>
             <p>「よくある間違い○✕クイズ」は、高校～大学数学でつまずきやすい典型的な誤答をテーマにした、選択式のクイズWebアプリケーションです。金沢工業大学 数理工教育研究センターの学生スタッフ業務として開発に取り組みました。</p>
@@ -93,36 +71,8 @@
             <p>なお、本来のアプリは金沢工業大学の学内ネットワークからのみ接続可能なため、ここで紹介しているのは、学内サーバーで公開しているものと同じアプリをKaleidowebに再実装したバージョンです。このバージョンでは、ログインせずにログイン後の機能を確認できるよう、デモアカウントによるログイン機能を実装しています。デモアカウントの情報は、cron設定により10分ごとにリセットされます。</p>
         </div>
 
-        <!-- ----------------------------------------
-             YouTube動画埋め込み（紹介動画・VPなど）
-             不要な場合はこのブロックごと削除
-             動画IDはYouTubeの共有URL（youtu.be/【ここ】 または watch?v=【ここ】）の部分
-        ---------------------------------------- -->
-        <!--
-        <div class="video-embed-wrap">
-            <div class="figure-caption">【動画キャプション（例：紹介動画）】</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/【動画ID】" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-        -->
-
-        <!-- ----------------------------------------
-             追加画像（複数枚をグリッドで並べる）
-             不要な場合はこのブロックごと削除。枚数は自由に増減してOK
-        ---------------------------------------- -->
-        <!--
-        <div class="work-figure">
-            <div class="figure-caption">【キャプション】</div>
-            <div class="gallery-grid">
-                <img src="../../images/【画像ファイル名1】" alt="">
-                <img src="../../images/【画像ファイル名2】" alt="">
-            </div>
-        </div>
-        -->
-
         <div class="work-back">
-            <a href="../../#works-【category】">&larr; Works へ戻る</a>
+            <a href="../../#works-web">&larr; Works へ戻る</a>
         </div>
     </main>
     <?php $base = '../../'; include __DIR__ . '/../../parts/footer.php'; ?>
