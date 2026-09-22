@@ -46,7 +46,7 @@
                 </div>
                 <div class="work-overview-item">
                     <span class="label">アプリURL</span>
-                    <span class="value"><a href="https://www.kaleidoweb.net/oxquiz/ctrl/index.php" target="_blank" rel="noopener noreferrer">よくある間違い〇✕クイズ</a></span>
+                    <span class="value"><a href="https://oxquiz.kaleidoweb.net/ctrl/index.php" target="_blank" rel="noopener noreferrer">よくある間違い〇✕クイズ</a></span>
                 </div>
                 <div class="work-overview-item">
                     <span class="label">GitHub</span>
