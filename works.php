@@ -29,7 +29,7 @@
             <!-- １枚目 -->
             <figure class="work-item">
                 <a href="./works/oxquiz"><img src="./images/oxquiz.png" alt="OXquiz"></a>
-                <div class="work-title">よくある間違い〇✕クイズ</div>
+                <div class="work-title">よくある間違い ○×クイズ</div>
             </figure>
             <!-- ２枚目 -->
             <figure class="work-item">

@@ -16,7 +16,7 @@ main {
     margin: 0 0 20px 0;
     font-size: 56px;
     font-weight: 200;
-    font-family: var(--font-hero-title);
+    font-family: var(--font-anders);
     letter-spacing: 2px;
 	background: linear-gradient(15deg,rgb(123, 242, 247) 0%, rgba(9, 229, 236, 1) 100%);
 	-webkit-background-clip: text;
@@ -26,7 +26,7 @@ main {
 .hero-subtitle {
     width: fit-content;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 17px 0 17px;
     font-size: 18px;
     font-weight: 200;
     font-family: var(--font-text);

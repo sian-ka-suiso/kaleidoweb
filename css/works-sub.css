@@ -1,0 +1,123 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 clamp(1.5rem, 14vw, 14rem);
+    margin: 150px auto 150px;
+    gap: 120px;
+}
+
+section {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.work-header h1 {
+    font-weight: 200;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.work-period {
+    font-weight: 200;
+    color: var(--color-text-muted);
+    font-family: var(--font-roboto);
+    letter-spacing: 2px;
+}
+
+.tech-stack {
+    display: inline-block;
+    font-weight: 200;
+    color: var(--color-text);
+    margin-top: 10px;
+    padding: 0 17px 0 17px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.work-description {
+    font-weight: 200;
+    color: var(--color-text);
+    margin-top: 60px;
+}
+
+.work-link {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-top: 66px;
+}
+
+.work-link a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 300;
+    padding: 2px 3em 4px 3em;
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease, transform 0.5s ease;
+}
+
+.work-link a:hover {
+    transform: translate(5px, -5px);
+}
+
+.preview-heading {
+    color: var(--color-text);
+    font-weight: 200;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 8px;
+    padding-left: 12px;
+    border-left: 4px solid var(--color-text-muted);
+}
+
+.work-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.work-window {
+    margin: 0;   /* figure の初期余白を消す */
+}
+
+.upper-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: #1f2020;
+    padding: 7px 10px 0px 5px;
+    border-radius: 8px 8px 0 0;
+}
+
+.window-tab {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-text-muted);
+    margin-left: 5px;
+    background-color: #3C3C3C;
+    padding: 3px 10px 4px 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.upper-frame img {
+    width: 22px;
+    aspect-ratio: 1/1;
+}
+
+.work-screenshot {
+    display: block;
+    width: 100%;
+    background-color: #3C3C3C;
+    padding: 5px;
+}
