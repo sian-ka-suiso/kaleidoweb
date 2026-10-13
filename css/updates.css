@@ -1,0 +1,96 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 clamp(1.5rem, 14vw, 14rem);
+    margin: 150px auto 100px;
+}
+
+.page-title {
+    font-size: 46px;
+    font-family: var(--font-page-title);
+    font-weight: 200;
+    letter-spacing: 8px;
+    color: var(--color-text);
+    margin: auto;
+    margin-bottom: 120px;
+
+    padding: 0 8px 0 14px;
+    /* border-bottom: solid 1px var(--color-primary); */
+
+	/* background: linear-gradient(15deg,rgb(123, 242, 247) 0%, rgba(9, 229, 236, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    --line-x: 80px;   /* 線の横位置。他の部品もこれを基準 */
+    color: var(--color-text);
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: var(--line-x);
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--color-primary)
+}
+
+.timeline-year ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.year {
+    position: relative;
+    font-family: var(--font-roboto);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.year::after {
+    content: '';
+    position: absolute;
+    left: var(--line-x);
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #51f9ff;
+    transform: translate(-50%, -50%);
+}
+
+.events li {
+    position: relative;
+    padding-left: calc(var(--line-x) + 55px);   /* 線＋枝の分だけ右へ */
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.events li::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--line-x));
+    top: 50%;
+    width: 50px;
+    border-top: 1px dotted #51f9ff;
+}
+
+.events time {
+    display: inline-block;
+    width: 3.5em;
+    text-align: right;
+    margin-right: 12px;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    font-weight: 200;
+}

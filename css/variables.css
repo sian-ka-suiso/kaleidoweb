@@ -1,14 +1,34 @@
+@font-face {
+    font-family: 'Anders';
+    src: url('../font-files/Anders.woff2') format('woff2'),
+         url('../font-files/Anders.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* font-family */
-    --font-logo: 'Roboto', sans-serif;
-    --font-heading-en: 'Orbitron', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-orbitron: 'Orbitron', sans-serif;
     --font-text: 'Noto Sans JP', sans-serif;
+    --font-hero-title: 'Anders', sans-serif;
+    --font-page-title: 'Anders', sans-serif;
 
     /* color */
-    --color-background: #FFFFFF;
+    --color-primary: rgb(38, 248, 255);
+    --color-text: #ffffff;
+
+    /* Works 額縁用の色 */
+    --gold-dark:  #8c6d2c;
+    --gold-mid:   #b8974f;
+    --gold-light: #e3cf97;
+
+
+    --color-background: #101010;
     --color-heading: #0b185f;
-    --color-text: #111111;
-    --color-text-muted: #666666;
+    
+    --color-text-muted: rgba(255, 255, 255, 0.75);
 
     --color-card-heading: #FFFFFF;
     --color-card-text: #FFFFFF;

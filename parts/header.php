@@ -8,11 +8,11 @@ $base = $base ?? '';
 $home = $base === '' ? '.' : $base;
 ?>
 <header>
-    <div class="logo"><a href="<?= $home ?>">Keleido Web</a></div>
     <nav>
-        <!-- <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Contact</a></li> -->
+        <ul>
+            <li class="<?= $current === 'top' ? 'current-location' : '' ?>"><a href=".">Top</a></li>
+            <li class="<?= $current === 'works' ? 'current-location' : '' ?>"><a href="./works">Works</a></li>
+            <li class="<?= $current === 'updates' ? 'current-location' : '' ?>"><a href="./updates">Updates</a></li>
+        </ul>
     </nav>
 </header>

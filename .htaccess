@@ -1,9 +1,21 @@
 RewriteEngine On
 
+# 同名のフォルダがあっても /works → /works/ へ自動リダイレクトさせない
+# (works.php と works/ フォルダが共存するため)
+DirectorySlash Off
+Options -Indexes
+
+# .php拡張子付きでアクセスされたら拡張子なしURLへリダイレクト(SEO対策・重複URL防止)
+# パス部分に「.」を含む場合(例: /kaleidoweb.net/)でも動くよう、末尾の .php だけを判定する
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(/[^?\s]*?)\.php[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 末尾スラッシュ付き(/works/)で、同名の .php があればスラッシュなしへリダイレクト
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteCond %{DOCUMENT_ROOT}%1.php -f
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteRule ^ %1 [R=301,L]
+
 # .php拡張子なしのURLでアクセスされた場合、実際の.phpファイルを返す
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^.]+)$ $1.php [L]
-
-# .php拡張子付きでアクセスされたら拡張子なしURLへリダイレクト(SEO対策・重複URL防止)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php[\s?] [NC]
-RewriteRule ^ %1 [R=301,L]
