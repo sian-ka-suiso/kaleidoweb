@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/works.css">
     <link rel="stylesheet" href="css/variables.css">
-    <title>【Works】 Kaleido Web｜Kaleido's Portfolio Site</title>
+    <title>Works｜Kaleido's Portfolio Site</title>
 </head>
 <body>
     <canvas id="electron-bg"></canvas>

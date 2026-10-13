@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
 }
 
 body {

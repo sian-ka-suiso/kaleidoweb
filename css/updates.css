@@ -16,7 +16,7 @@ main {
     margin: auto;
     margin-bottom: 120px;
 
-    padding: 0 8px 0 14px;
+    /* padding: 0 8px 0 14px; */
     /* border-bottom: solid 1px var(--color-primary); */
 
 	/* background: linear-gradient(15deg,rgb(123, 242, 247) 0%, rgba(9, 229, 236, 1) 100%);
