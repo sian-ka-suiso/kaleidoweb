@@ -73,7 +73,7 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 100;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 footer .copyright {
