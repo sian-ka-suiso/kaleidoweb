@@ -27,6 +27,22 @@ main {
     margin: 0;
 }
 
+.work-number {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--color-text-muted);
+    font-family: var(--font-roboto);
+    letter-spacing: 1px;
+    padding-left: 2px;
+    margin-bottom: 8px;
+    font-variant-numeric: tabular-nums;
+}
+
+.work-number-digit {
+    color: var(--color-primary);
+}
+
 .work-item a {
     display: block;
     perspective: 800px;
@@ -39,7 +55,7 @@ main {
 }
 
 .work-item img:hover {
-    opacity: 0.75;
+    opacity: 0.9;
     transform: scale(1.02);
 }
 
@@ -49,8 +65,8 @@ main {
     font-weight: 300;
     color: var(--color-text);
     letter-spacing: 1px;
-    margin: 8px auto 0;
-    padding: 0 17px 0 17px;
+    margin: 12px auto 0;
+    padding: 0 35px 1px 35px;
     background-color: rgba(255, 255, 255, 0.15);
     text-align: center;
 }

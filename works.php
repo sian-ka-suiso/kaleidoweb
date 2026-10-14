@@ -1,3 +1,10 @@
+<?php
+function work_number($n) {
+    $num = (string)$n;
+    $zeros = str_repeat('0', max(0, 3 - strlen($num)));
+    return 'No.' . $zeros . '<span class="work-number-digit">' . $num . '</span>';
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,11 +35,13 @@
         <section class="works">
             <!-- １枚目 -->
             <figure class="work-item">
+                <span class="work-number"><?= work_number(1) ?></span>
                 <a href="./works/oxquiz"><img src="./images/oxquiz.png" alt="OXquiz"></a>
                 <div class="work-title">よくある間違い ○×クイズ</div>
             </figure>
             <!-- ２枚目 -->
             <figure class="work-item">
+                <span class="work-number"><?= work_number(2) ?></span>
                 <a href="./works/kiten-hp"><img src="./images/kiten_hp.webp" alt="kiten"></a>
                 <div class="work-title">KIT eSports Project</div>
             </figure>
