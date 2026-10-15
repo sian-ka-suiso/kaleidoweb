@@ -20,7 +20,7 @@ $pageCss = 'works-sub.css';
                 <dl class="work-meta">
                     <div class="work-meta-item">
                         <dt>Role</dt>
-                        <dd class="work-role" data-label="└ Role">Design, Development</dd>
+                        <dd class="work-role" data-label="└ Role">Web Design, Development</dd>
                     </div>
                     <div class="work-meta-item">
                         <dt>Stack</dt>

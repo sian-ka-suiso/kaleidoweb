@@ -20,7 +20,7 @@ $pageCss = 'works-sub.css';
                 <dl class="work-meta">
                     <div class="work-meta-item">
                         <dt>Role</dt>
-                        <dd class="work-role" data-label="└ Role">Design, Development</dd>
+                        <dd class="work-role" data-label="└ Role">Web Design, Development</dd>
                     </div>
                     <div class="work-meta-item">
                         <dt>Stack</dt>
@@ -30,7 +30,7 @@ $pageCss = 'works-sub.css';
             </div>
             <div class="work-description">
                 <p>大学の授業課題で制作。</p>
-                <p>自然界には螺旋構造が広く見らるという内容から、螺旋構造と自然を関連付けたビジュアル作品として、アルキメデス螺旋を用いて太陽系の描画する作品を制作。</p>
+                <p>自然界には螺旋構造が広く見らるという内容から、螺旋構造と自然を関連付けたビジュアル作品として、アルキメデス螺旋（r=aθ）を用いて太陽系の描画する作品を制作。</p>
             </div>
             <div class="work-link">
                 <a href="https://solar-system.kaleidoweb.net/" target="_blank" rel="noopener">View Live ↗</a>
@@ -43,7 +43,7 @@ $pageCss = 'works-sub.css';
                 <!-- １枚目 -->
                 <figure class="work-window">
                     <figcaption class="upper-frame">
-                        <span class="window-tab">Intor Page</span>
+                        <span class="window-tab">Intro Page</span>
                         <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
                     </figcaption>
                     <img src="<?= $base ?>images/works/solar-system/preview1.webp" alt="イントロ画面" class="work-screenshot">

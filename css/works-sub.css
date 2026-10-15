@@ -103,8 +103,13 @@ section {
 }
 
 .work-description a {
-    color: var(--color-primary);
+    color: var(--color-text-muted);
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.work-description a:hover {
+    color: var(--color-primary);
 }
 
 .work-description p {
@@ -113,6 +118,32 @@ section {
 
 .work-description a:hover {
     color: var(--color-primary-muted);
+}
+
+/* 関連リンク（事例紹介・論文など）：ボタンより控えめなテキストリンク */
+.work-related {
+    list-style: none;
+    margin: 30px 0 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.work-related li + li {
+    margin-top: 6px;
+}
+
+.work-related a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(255, 255, 255, 0.25);
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.work-related a:hover {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
 }
 
 .work-link {

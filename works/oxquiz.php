@@ -20,7 +20,7 @@ $pageCss = 'works-sub.css';
                 <dl class="work-meta">
                     <div class="work-meta-item">
                         <dt>Role</dt>
-                        <dd class="work-role" data-label="└ Role">Design, Development</dd>
+                        <dd class="work-role" data-label="└ Role">Web Design, Development</dd>
                     </div>
                     <div class="work-meta-item">
                         <dt>Stack</dt>
@@ -29,11 +29,15 @@ $pageCss = 'works-sub.css';
                 </dl>
             </div>
             <div class="work-description">
-                <p>高校～大学数学でつまずきやすい典型的な誤答をテーマにした、選択式のクイズWebアプリケーション。<br>金沢工業大学 数理工教育研究センターの学生スタッフ業務として開発。</p>
-                <p>フロントエンド、バックエンド、DB設計を担当。章・節ごとの進捗表示や、間違えた問題をブックマークして後から解き直せる復習リスト機能などを実装したほか、教員・管理者向けの管理画面（ユーザー管理、問題の追加・編集・削除など）も実装。</p>
-                <p>2025年4月より実際の授業で利用されている。</p>
-                <p>なお、本来のアプリは金沢工業大学の学内ネットワークからのみ接続可能なため、ここで紹介するのは、学内サーバーで公開しているものと同じアプリを「Kaleido Web」に再実装したバージョンである。<br>このバージョンでは、ログインせずにログイン後の機能を確認できるよう、デモアカウントによるログイン機能を実装。デモアカウントの情報は、cron設定により10分ごとにリセットされる。</p>
+                <p>高校〜大学数学でつまずきやすい誤答をテーマにした、選択式のクイズ Web アプリです。金沢工業大学 数理工教育研究センターの学生スタッフ業務として開発しました。</p>
+                <p>フロントエンド、バックエンド、データベース設計を担当。単元ごとの進捗表示、間違えた問題を後から解き直せる復習リスト、教員・管理者向けの管理画面（ユーザー管理、問題の追加・編集・削除）などを実装しています。</p>
+                <p>2025年4月から、実際の授業で利用されています。</p>
+                <p>なお、本来のアプリは学内ネットワークからのみ接続可能なため、ここで紹介するのは、学内サーバーで公開しているものと同じアプリを個人のサーバーにデモ版として再実装したバージョンである。デモアカウントの情報は、10分ごとに自動でリセットされます。</p>
             </div>
+            <ul class="work-related" aria-label="関連リンク">
+                <li><a href="https://www.kanazawa-it.ac.jp/jigyo/dx/example/exa09.html" target="_blank" rel="noopener">オンライン・オンデマンド教材の活用 - 金沢工業大学 ↗</a></li>
+                <li><a href="https://cir.nii.ac.jp/crid/1050307501844645120" target="_blank" rel="noopener">よくある間違いを題材としたウェブクイズシステムの開発 - KIT Progress ↗</a></li>
+            </ul>
             <div class="work-link">
                 <a href="https://oxquiz.kaleidoweb.net/ctrl/index.php" target="_blank" rel="noopener">View Live ↗</a>
                 <a href="https://github.com/sian-ka-suiso/OXquiz" target="_blank" rel="noopener">Source Code ↗</a>
