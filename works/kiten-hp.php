@@ -1,0 +1,106 @@
+<?php
+$base = '../';
+$current = 'works';
+$pageTitle = 'KIT eSports Project';
+$pageCss = 'works-sub.css';
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<?php include __DIR__ . '/../parts/head.php'; ?>
+<body>
+    <canvas id="electron-bg"></canvas>
+    <?php include __DIR__ . '/../parts/header.php'; ?>
+    <main>
+        <section>
+            <div class="page-header">
+                <div class="work-header">
+                    <h1>KIT eSports Project</h1>
+                    <span class="work-period">2025.04 - Present</span>
+                </div>
+                <div class="tech-stack">HTML, CSS, JavaScript, PHP</div>
+            </div>
+            <div class="work-description">
+                <p>金沢工業大学公式の課外活動団体「KIT eSports Project」の公式ホームページを制作。</p>
+                <p>学内向けの制作物ではなく、企業・団体との連携窓口や大会実績の発信を担う実運用サイトであり、サイト全体の設計・実装から現在の保守までを一貫して担当。</p>
+            </div>
+            <div class="work-link">
+                <a href="https://kit-esports.jp/" target="_blank" rel="noopener">View Live ↗</a>
+                <!-- <a href="https://github.com/〇〇" target="_blank" rel="noopener">Source Code ↗</a> -->
+            </div>
+        </section>
+        <section>
+            <h2 class="preview-heading">Preview</h2>
+            <div class="work-images">
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">Top</span>
+                        <div>
+                            <img src="<?= $base ?>images/minimize.webp" alt="">
+                            <img src="<?= $base ?>images/maximize.webp" alt="">
+                            <img src="<?= $base ?>images/close.webp" alt="">
+                        </div>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/KITeSportsProject/preview1.webp" alt="top-page画面" class="work-screenshot">
+                </figure>
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">About</span>
+                        <div>
+                            <img src="<?= $base ?>images/minimize.webp" alt="">
+                            <img src="<?= $base ?>images/maximize.webp" alt="">
+                            <img src="<?= $base ?>images/close.webp" alt="">
+                        </div>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/KITeSportsProject/preview2.webp" alt="about-page画面" class="work-screenshot">
+                </figure>
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">Division</span>
+                        <div>
+                            <img src="<?= $base ?>images/minimize.webp" alt="">
+                            <img src="<?= $base ?>images/maximize.webp" alt="">
+                            <img src="<?= $base ?>images/close.webp" alt="">
+                        </div>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/KITeSportsProject/preview3.webp" alt="divition-page画面" class="work-screenshot">
+                </figure>
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">News</span>
+                        <div>
+                            <img src="<?= $base ?>images/minimize.webp" alt="">
+                            <img src="<?= $base ?>images/maximize.webp" alt="">
+                            <img src="<?= $base ?>images/close.webp" alt="">
+                        </div>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/KITeSportsProject/preview4.webp" alt="news-page画面" class="work-screenshot">
+                </figure>
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">Eagle Cup</span>
+                        <div>
+                            <img src="<?= $base ?>images/minimize.webp" alt="">
+                            <img src="<?= $base ?>images/maximize.webp" alt="">
+                            <img src="<?= $base ?>images/close.webp" alt="">
+                        </div>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/KITeSportsProject/preview5.webp" alt="eagle-cup画面" class="work-screenshot">
+                </figure>
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">Contact</span>
+                        <div>
+                            <img src="<?= $base ?>images/minimize.webp" alt="">
+                            <img src="<?= $base ?>images/maximize.webp" alt="">
+                            <img src="<?= $base ?>images/close.webp" alt="">
+                        </div>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/KITeSportsProject/preview6.webp" alt="contact-page画面" class="work-screenshot">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <?php include __DIR__ . '/../parts/footer.php'; ?>
+    <script src="<?= $base ?>js/background.js"></script>
+</body>
+</html>

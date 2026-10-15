@@ -1,4 +1,8 @@
 <?php
+$current = 'works';
+$pageTitle = 'Works';
+$pageCss = 'works.css';
+
 function work_number($n) {
     $num = (string)$n;
     $zeros = str_repeat('0', max(0, 3 - strlen($num)));
@@ -7,43 +11,36 @@ function work_number($n) {
 ?>
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kaleido's Portfolio Site">
-    <meta property="og:title" content="Kaleido Web" />
-    <meta property="og:description" content="Kaleido's Portfolio Site" />
-    <meta property="og:image" content="" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@kaleidoweb" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <title>Works｜Kaleido's Portfolio Site</title>
-</head>
+<?php include __DIR__ . '/parts/head.php'; ?>
 <body>
     <canvas id="electron-bg"></canvas>
-    <?php $current='works'; ?>
     <?php include 'parts/header.php'; ?>
     <main>
         <h1 class="page-title">Works</h1>
         <section class="works">
-            <!-- １枚目 -->
+            <!-- No.1 -->
             <figure class="work-item">
                 <span class="work-number"><?= work_number(1) ?></span>
-                <a href="./works/oxquiz"><img src="./images/oxquiz.png" alt="OXquiz"></a>
-                <div class="work-title">よくある間違い ○×クイズ</div>
+                <a href="./works/kaleidoweb"><img src="./images/works/kaleidoweb.webp" alt="KaleidoWeb"></a>
+                <div class="work-title">Kaleido Web</div>
             </figure>
-            <!-- ２枚目 -->
+            <!-- No.2 -->
             <figure class="work-item">
                 <span class="work-number"><?= work_number(2) ?></span>
-                <a href="./works/kiten-hp"><img src="./images/kiten_hp.webp" alt="kiten"></a>
+                <a href="./works/oxquiz"><img src="./images/works/oxquiz.webp" alt="OXquiz"></a>
+                <div class="work-title">よくある間違い ○×クイズ</div>
+            </figure>
+            <!-- No.3 -->
+            <figure class="work-item">
+                <span class="work-number"><?= work_number(3) ?></span>
+                <a href="./works/kiten-hp"><img src="./images/works/kiten.webp" alt="KITeN-HP"></a>
                 <div class="work-title">KIT eSports Project</div>
+            </figure>
+            <!-- No.4 -->
+            <figure class="work-item">
+                <span class="work-number"><?= work_number(4) ?></span>
+                <a href="./works/himenoyu"><img src="./images/works/himenoyu.webp" alt="比咩の湯"></a>
+                <div class="work-title">比咩の湯 - 白山市</div>
             </figure>
         </section>
     </main>
