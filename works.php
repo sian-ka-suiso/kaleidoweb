@@ -45,12 +45,13 @@ function work_number($n) {
             <!-- No.5 2024年7月 -->
             <figure class="work-item">
                 <span class="work-number"><?= work_number(5) ?></span>
-                <a href="./works/himenoyu"><img src="./images/no-image.webp" alt="太陽系"></a>
-                <div class="work-title"><span style="font-style: italic;">r=a&theta;</span> &#9472; Solar System</div>
+                <a href="./works/solar-system"><img src="./images/works/solar-system.webp" alt="太陽系"></a>
+                <div class="work-title"><span style="font-style: italic;">r=a&theta;</span> ― Solar System</div>
             </figure>
         </section>
     </main>
     <?php include 'parts/footer.php'; ?>
     <script src="./js/background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>

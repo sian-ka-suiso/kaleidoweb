@@ -16,7 +16,7 @@ $pageCss = 'updates.css';
                 <h2 class="year">2026</h2>
                 <ol class="events">
                     <li><time datetime="2026-09-22">09.22</time>Kaleido Web Launched</li>
-                    <li><time datetime="2026-10-13">10.13</time>UI Redesign</li>
+                    <li><time datetime="2026-10-13">10.16</time>UI Redesign</li>
                 </ol>
             </div>
             <!-- <div class="timeline-year">
