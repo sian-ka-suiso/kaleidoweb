@@ -89,3 +89,62 @@ main {
     font-weight: 200;
     font-family: var(--font-roboto);
 }
+
+/* ===== ページ表示時のアニメーション ===== */
+
+.page-title {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* 縦線：上から下へ伸びる */
+.timeline::before {
+    transform-origin: top;
+    animation: timeline-line 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+/* 年：文字はふわっと、丸ポチはポンと現れる */
+.year {
+    animation: page-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+}
+
+.year::after {
+    animation: timeline-dot 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s both;
+}
+
+/* 出来事：左から順に現れ、枝線は線から右へ伸びる（4件目以降は同時） */
+.events li {
+    animation: timeline-event 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+
+.events li::before {
+    transform-origin: left;
+    animation: timeline-branch 0.4s ease-out 0.6s both;
+}
+
+.events li:nth-child(1),
+.events li:nth-child(1)::before { animation-delay: 0.4s; }
+.events li:nth-child(2),
+.events li:nth-child(2)::before { animation-delay: 0.48s; }
+.events li:nth-child(3),
+.events li:nth-child(3)::before { animation-delay: 0.56s; }
+
+@keyframes timeline-line {
+    from { transform: scaleY(0); }
+}
+
+/* 丸ポチは中央寄せの translate を保ったまま拡大する */
+@keyframes timeline-dot {
+    from { transform: translate(-50%, -50%) scale(0); }
+    to   { transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes timeline-event {
+    from {
+        opacity: 0;
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes timeline-branch {
+    from { transform: scaleX(0); }
+}

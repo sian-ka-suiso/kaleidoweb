@@ -73,3 +73,19 @@ main {
     background-color: rgba(255, 255, 255, 0.15);
     text-align: center;
 }
+
+/* ===== ページ表示時のアニメーション ===== */
+
+.page-title {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* 作品カードは上から順に少しずつ遅らせて表示（5枚目以降は同時） */
+.work-item {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
+}
+
+.work-item:nth-child(1) { animation-delay: 0.1s; }
+.work-item:nth-child(2) { animation-delay: 0.18s; }
+.work-item:nth-child(3) { animation-delay: 0.26s; }
+.work-item:nth-child(4) { animation-delay: 0.34s; }
