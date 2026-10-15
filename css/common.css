@@ -83,3 +83,24 @@ footer .copyright {
     margin: 0;
     cursor: default;
 }
+
+/* ===== ページ表示時のアニメーション（Works・Updates などで共通） ===== */
+
+/* 少し下からふわっと浮かび上がる */
+@keyframes page-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+}
+
+/* アニメーションを減らす設定の人には、すべてのアニメーションを止めて最初から完成形を見せる */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+        animation-iteration-count: 1 !important;
+    }
+}
