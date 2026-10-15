@@ -29,8 +29,8 @@ $pageCss = 'works-sub.css';
                 </dl>
             </div>
             <div class="work-description">
-                <p>金沢工業大学公式の課外活動団体「KIT eSports Project」の公式ホームページを制作。</p>
-                <p>学内向けの制作物ではなく、企業・団体との連携窓口や大会実績の発信を担う実運用サイトであり、サイト全体の設計・実装から現在の保守までを一貫して担当。</p>
+                <p>金沢工業大学公式の課外活動団体「KIT eSports Project」の公式ホームページ。</p>
+                <p>団体の紹介に加え、企業・団体との連携窓口や大会実績の発信にも使われている実運用サイトです。サイト全体の設計・実装から現在の保守までを、一貫して担当しています。</p>
             </div>
             <div class="work-link">
                 <a href="https://kit-esports.jp/" target="_blank" rel="noopener">View Live ↗</a>

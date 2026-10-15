@@ -30,7 +30,7 @@ $pageCss = 'works-sub.css';
             </div>
             <div class="work-description">
                 <p>本サイト。Kaleido（カレイド）のポートフォリオサイト。</p>
-                <p>更新履歴を <a href="<?= $base ?>updates">Updates</a> ページで公開。</p>
+                <p>更新履歴を <a href="<?= $base ?>updates">Updates</a> ページで公開しています。</p>
             </div>
             <div class="work-link">
                 <a href="https://www.kaleidoweb.net/" target="_blank" rel="noopener">View Live ↗</a>

@@ -14,7 +14,7 @@ $pageCss = 'works-sub.css';
         <section>
             <div class="page-header">
                 <div class="work-header">
-                    <h1><span style="font-style: italic;">r=a&theta;</span> ― Solar System</h1>
+                    <h1><span style="font-style: italic;"><var>r</var> = <var>a</var><var>θ</var></span> ― Solar System</h1>
                     <span class="work-period">2024.07</span>
                 </div>
                 <dl class="work-meta">
@@ -29,8 +29,8 @@ $pageCss = 'works-sub.css';
                 </dl>
             </div>
             <div class="work-description">
-                <p>大学の授業課題で制作。</p>
-                <p>自然界には螺旋構造が広く見らるという内容から、螺旋構造と自然を関連付けたビジュアル作品として、アルキメデス螺旋（r=aθ）を用いて太陽系の描画する作品を制作。</p>
+                <p>大学の授業課題として制作した、p5.js によるビジュアル作品。</p>
+                <p>「自然界には螺旋の構造が多く見られる」という講義の内容から、螺旋を使って自然を描くことをテーマに、アルキメデス螺旋（<var>r</var> = <var>a</var><var>θ</var>）で太陽系を表現しました。</p>
             </div>
             <div class="work-link">
                 <a href="https://solar-system.kaleidoweb.net/" target="_blank" rel="noopener">View Live ↗</a>

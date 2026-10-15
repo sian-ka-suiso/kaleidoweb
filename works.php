@@ -46,7 +46,7 @@ function work_number($n) {
             <figure class="work-item">
                 <span class="work-number"><?= work_number(5) ?></span>
                 <a href="./works/solar-system"><img src="./images/works/solar-system.webp" alt="太陽系"></a>
-                <div class="work-title"><span style="font-style: italic;">r=a&theta;</span> ― Solar System</div>
+                <div class="work-title"><span style="font-style: italic;"><var>r</var> = <var>a</var><var>θ</var></span> ― Solar System</div>
             </figure>
         </section>
     </main>
