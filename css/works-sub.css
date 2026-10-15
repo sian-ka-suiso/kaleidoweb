@@ -220,3 +220,33 @@ section {
     background-color: #3C3C3C;
     padding: 5px;
 }
+
+/* ===== ページ表示時のアニメーション（page-in は common.css で定義） ===== */
+
+/* 説明部分：ページを開いたときに上から順に浮かび上がる */
+.page-header {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.work-description {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.work-related {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+}
+
+.work-link {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+}
+
+/* Preview：スクロールして画面に入ったときに浮かび上がる
+   (スクロール連動アニメーションに対応していないブラウザでは、最初から表示されたまま) */
+@supports (animation-timeline: view()) {
+    .preview-heading,
+    .work-window {
+        animation: page-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 40%;
+    }
+}
