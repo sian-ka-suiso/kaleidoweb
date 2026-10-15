@@ -23,34 +23,35 @@
   let scrambleTimer = null;
   let finished = false;
 
+  // 本物の文字を1文字ずつ inline の span に分け、まだ確定していない文字は visibility: hidden で隠す。
+  // inline のままなので文字の並びや詰めは変わらず、hidden なので輪郭のぼかしも含めて何も描かれない。
+  // 確定した文字は本物の文字そのものなので、イントロ後も入れ替えが起きず位置がずれない。
+  // ちらつきの演出が始まる前に本物の文字が見えないよう、フォントの読み込みを待たずにすぐ隠す
+  const letters = [...original].map((ch) => {
+    const span = document.createElement('span');
+    span.textContent = ch;
+    if (ch !== ' ') span.style.visibility = 'hidden';
+    return span;
+  });
+  title.replaceChildren(...letters);
+  title.setAttribute('aria-label', original);   // hidden の文字は読み上げられないため、イントロ中だけ名前を付ける
+
+  let overlays = [];
+
   function scramble() {
     if (finished) return;
 
-    title.setAttribute('aria-label', original);   // 解読中のランダム文字を読み上げさせない
-
-    // 本物の文字はレイアウトを保ったまま見えなくし、その各文字の位置にランダムな文字を重ねる。
-    // 本物の文字は一度も動かないので、イントロ後に元へ戻しても位置がずれない
-    const real = document.createElement('span');
-    real.textContent = original;
-    real.style.visibility = 'hidden';
-    title.replaceChildren(real);
-    title.style.position = 'relative';
-
+    title.style.position = 'relative';   // ランダムな文字を重ねる基準
     const titleRect = title.getBoundingClientRect();
-    const textNode = real.firstChild;
-    const range = document.createRange();
 
-    const spans = [...original].map((ch, i) => {
-      if (ch === ' ') return null;
-      range.setStart(textNode, i);
-      range.setEnd(textNode, i + 1);
-      const rect = range.getBoundingClientRect();
-
+    // 隠した本物の各文字の位置に、ランダムな文字を重ねる
+    overlays = letters.map((letter, i) => {
+      if (original[i] === ' ') return null;
       const span = document.createElement('span');
-      span.textContent = ch;
+      span.textContent = randomChar();
       span.setAttribute('aria-hidden', 'true');
       span.style.position = 'absolute';
-      span.style.left = rect.left - titleRect.left + 'px';
+      span.style.left = letter.getBoundingClientRect().left - titleRect.left + 'px';
       span.style.top = '0';   // 行の高さはタイトルから引き継ぐので、本物の文字と同じ高さ(ベースライン)に並ぶ
       span.style.whiteSpace = 'pre';
       title.appendChild(span);
@@ -58,13 +59,17 @@
     });
 
     const startedAt = performance.now();
-    const step = CONFIG.scrambleDuration / spans.length;
+    const step = CONFIG.scrambleDuration / overlays.length;
 
     const tick = () => {
       const elapsed = performance.now() - startedAt;
-      spans.forEach((span, i) => {
-        if (!span) return;
-        span.textContent = elapsed >= step * (i + 1) ? original[i] : randomChar();
+      overlays.forEach((span, i) => {
+        if (!span || !span.isConnected) return;
+        if (elapsed < step * (i + 1)) {
+          span.textContent = randomChar();
+        } else {
+          reveal(i);
+        }
       });
       if (elapsed >= CONFIG.scrambleDuration) {
         clearInterval(scrambleTimer);
@@ -75,12 +80,18 @@
     scrambleTimer = setInterval(tick, CONFIG.scrambleInterval);
   }
 
+  // 確定：重ねた文字を外し、本物の文字を見せる
+  function reveal(i) {
+    if (overlays[i]) overlays[i].remove();
+    letters[i].style.visibility = '';
+  }
+
   function finish() {
     if (finished) return;
     finished = true;
     timers.forEach(clearTimeout);
     if (scrambleTimer) clearInterval(scrambleTimer);
-    title.textContent = original;
+    letters.forEach((_, i) => reveal(i));
     title.style.position = '';
     title.removeAttribute('aria-label');
     root.classList.remove('is-intro');
