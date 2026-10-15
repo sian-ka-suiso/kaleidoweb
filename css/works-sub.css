@@ -48,6 +48,19 @@ section {
     margin-top: 60px;
 }
 
+.work-description a {
+    /* text-decoration: none; */
+    color: var(--color-primary);
+}
+
+.work-description p {
+    margin: 12px 0;
+}
+
+.work-description a:hover {
+    color: var(--color-primary-muted);
+}
+
 .work-link {
     display: flex;
     gap: 45px;

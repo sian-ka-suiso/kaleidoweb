@@ -14,8 +14,8 @@
     --font-anders: 'Anders', sans-serif;
 
     /* color */
-    --color-primary: rgb(38, 248, 255);
-    --color-primary-muted: rgb(38, 248, 255, 0.75);
+    --color-primary: #26f8ff;
+    --color-primary-muted: #26f8ffbf;
     --color-text: #ffffff;
     --color-text-muted: rgba(255, 255, 255, 0.75);
     --color-background: #101010;

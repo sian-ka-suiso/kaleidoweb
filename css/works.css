@@ -31,7 +31,7 @@ main {
     display: inline-block;
     font-size: 16px;
     font-weight: 200;
-    color: var(--color-text-muted);
+    color: var(--color-text);
     font-family: var(--font-roboto);
     letter-spacing: 1px;
     padding-left: 2px;
@@ -51,6 +51,7 @@ main {
 .work-item img {
     width: 100%;
     border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
