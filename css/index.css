@@ -18,9 +18,7 @@ main {
     font-weight: 200;
     font-family: var(--font-anders);
     letter-spacing: 2px;
-	background: linear-gradient(15deg,rgb(123, 242, 247) 0%, rgba(9, 229, 236, 1) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    color: var(--color-primary);
     cursor: default;
 }
 

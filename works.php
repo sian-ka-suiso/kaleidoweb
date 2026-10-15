@@ -21,7 +21,7 @@ function work_number($n) {
             <!-- No.1 -->
             <figure class="work-item">
                 <span class="work-number"><?= work_number(1) ?></span>
-                <a href="./works/kaleidoweb"><img src="./images/works/kaleidoweb.png" alt="KaleidoWeb"></a>
+                <a href="./works/kaleidoweb"><img src="./images/works/kaleidoweb.webp" alt="KaleidoWeb"></a>
                 <div class="work-title">Kaleido Web</div>
             </figure>
             <!-- No.2 -->
