@@ -17,7 +17,10 @@ $pageCss = 'works-sub.css';
                     <h1>〇〇（作品名）</h1>
                     <span class="work-period">YYYY.MM - Present</span><!-- 終了している場合は YYYY.MM - YYYY.MM -->
                 </div>
-                <div class="tech-stack">HTML, CSS, JavaScript</div>
+                <div class="work-meta">
+                    <div class="work-role">Design, Development</div>
+                    <div class="tech-stack">HTML, CSS, JavaScript</div>
+                </div>
             </div>
             <div class="work-description">
                 <p>〇〇（作品の概要）</p>
@@ -37,13 +40,9 @@ $pageCss = 'works-sub.css';
                 <figure class="work-window">
                     <figcaption class="upper-frame">
                         <span class="window-tab">〇〇 Page</span>
-                        <div>
-                            <img src="<?= $base ?>images/minimize.webp" alt="">
-                            <img src="<?= $base ?>images/maximize.webp" alt="">
-                            <img src="<?= $base ?>images/close.webp" alt="">
-                        </div>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
                     </figcaption>
-                    <img src="<?= $base ?>images/〇〇.png" alt="〇〇画面" class="work-screenshot">
+                    <img src="<?= $base ?>images/works/〇〇/.webp" alt="〇〇画面" class="work-screenshot">
                 </figure>
                 <!-- ↑ ここまで -->
             </div>

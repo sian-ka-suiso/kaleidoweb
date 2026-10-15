@@ -17,7 +17,10 @@ $pageCss = 'works-sub.css';
                     <h1>よくある間違い ○×クイズ</h1>
                     <span class="work-period">2024.06 - Present</span>
                 </div>
-                <div class="tech-stack">HTML, CSS, JavaScript, PHP, MySQL</div>
+                <div class="work-meta">
+                    <div class="work-role">Design, Development</div>
+                    <div class="tech-stack">HTML, CSS, JavaScript, PHP, MySQL</div>
+                </div>
             </div>
             <div class="work-description">
                 <p>高校～大学数学でつまずきやすい典型的な誤答をテーマにした、選択式のクイズWebアプリケーション。<br>金沢工業大学 数理工教育研究センターの学生スタッフ業務として開発。</p>
@@ -33,47 +36,35 @@ $pageCss = 'works-sub.css';
         <section>
             <h2 class="preview-heading">Preview</h2>
             <div class="work-images">
+                <!-- １枚目 -->
                 <figure class="work-window">
                     <figcaption class="upper-frame">
                         <span class="window-tab">Chapter Page</span>
-                        <div>
-                            <img src="<?= $base ?>images/minimize.webp" alt="">
-                            <img src="<?= $base ?>images/maximize.webp" alt="">
-                            <img src="<?= $base ?>images/close.webp" alt="">
-                        </div>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
                     </figcaption>
                     <img src="<?= $base ?>images/works/OXquiz/preview1.webp" alt="チャプター画面" class="work-screenshot">
                 </figure>
+                <!-- ２枚目 -->
                 <figure class="work-window">
                     <figcaption class="upper-frame">
                         <span class="window-tab">Section Page</span>
-                        <div>
-                            <img src="<?= $base ?>images/minimize.webp" alt="">
-                            <img src="<?= $base ?>images/maximize.webp" alt="">
-                            <img src="<?= $base ?>images/close.webp" alt="">
-                        </div>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
                     </figcaption>
                     <img src="<?= $base ?>images/works/OXquiz/preview2.webp" alt="セクション画面" class="work-screenshot">
                 </figure>
+                <!-- ３枚目 -->
                 <figure class="work-window">
                     <figcaption class="upper-frame">
                         <span class="window-tab">Question Page</span>
-                        <div>
-                            <img src="<?= $base ?>images/minimize.webp" alt="">
-                            <img src="<?= $base ?>images/maximize.webp" alt="">
-                            <img src="<?= $base ?>images/close.webp" alt="">
-                        </div>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
                     </figcaption>
                     <img src="<?= $base ?>images/works/OXquiz/preview3.webp" alt="クエスチョン画面" class="work-screenshot">
                 </figure>
+                <!-- ４枚目 -->
                 <figure class="work-window">
                     <figcaption class="upper-frame">
                         <span class="window-tab">Question Page</span>
-                        <div>
-                            <img src="<?= $base ?>images/minimize.webp" alt="">
-                            <img src="<?= $base ?>images/maximize.webp" alt="">
-                            <img src="<?= $base ?>images/close.webp" alt="">
-                        </div>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
                     </figcaption>
                     <img src="<?= $base ?>images/works/OXquiz/preview4.webp" alt="クエスチョン画面" class="work-screenshot">
                 </figure>

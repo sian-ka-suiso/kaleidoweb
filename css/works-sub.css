@@ -33,7 +33,13 @@ section {
     letter-spacing: 2px;
 }
 
-.tech-stack {
+.work-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.work-meta .tech-stack, .work-meta .work-role {
     display: inline-block;
     font-weight: 200;
     color: var(--color-text);
