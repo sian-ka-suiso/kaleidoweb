@@ -34,3 +34,51 @@ main {
     color: var(--color-text);
     cursor: default;
 }
+
+/* ===== イントロ（js/intro.js と index.php の先頭スクリプトで html に is-intro を付けている間だけ有効） ===== */
+
+/* 背景・ヘッダー・フッターは最後にフェードイン */
+.is-intro #electron-bg {
+    animation: intro-fade 1s ease 1.3s both;
+}
+
+.is-intro header,
+.is-intro footer {
+    animation: intro-fade 0.8s ease 1.6s both;
+}
+
+/* タイトル：ネオン管が点くようにちらつきながら表示（文字の解読は JS） */
+.is-intro .hero-title {
+    animation: intro-flicker 0.9s linear 0.2s both;
+}
+
+/* サブタイトル：帯が中央から左右に開き、その後に文字が浮かび上がる */
+.is-intro .hero-subtitle {
+    animation:
+        intro-bar-open 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.9s both,
+        intro-text-in 0.4s ease 1.25s both;
+}
+
+@keyframes intro-fade {
+    from { opacity: 0; }
+}
+
+@keyframes intro-flicker {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; text-shadow: 0 0 18px var(--color-primary); }
+    15%  { opacity: 0.2; }
+    25%  { opacity: 1; }
+    30%  { opacity: 0.4; }
+    45%  { opacity: 1; text-shadow: 0 0 18px var(--color-primary); }
+    100% { opacity: 1; text-shadow: none; }
+}
+
+/* 左右から切り取った状態（幅0）から、全体が見える状態へ */
+@keyframes intro-bar-open {
+    from { clip-path: inset(0 50%); }
+    to   { clip-path: inset(0 0); }
+}
+
+@keyframes intro-text-in {
+    from { color: transparent; }
+}
