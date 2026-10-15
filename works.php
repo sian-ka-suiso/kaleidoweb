@@ -21,14 +21,14 @@ function work_number($n) {
             <!-- No.1 -->
             <figure class="work-item">
                 <span class="work-number"><?= work_number(1) ?></span>
-                <a href="./works/kaleidoweb"><img src="./images/works/kaleidoweb.webp" alt="KaleidoWeb"></a>
+                <a href="./works/kaleidoweb"><img src="./images/works/kaleidoweb.png" alt="KaleidoWeb"></a>
                 <div class="work-title">Kaleido Web</div>
             </figure>
             <!-- No.2 -->
             <figure class="work-item">
                 <span class="work-number"><?= work_number(2) ?></span>
                 <a href="./works/oxquiz"><img src="./images/works/oxquiz.webp" alt="OXquiz"></a>
-                <div class="work-title">よくある間違い ○×クイズ</div>
+                <div class="work-title">よくある間違い〇&#10005;クイズ</div>
             </figure>
             <!-- No.3 -->
             <figure class="work-item">
@@ -41,6 +41,12 @@ function work_number($n) {
                 <span class="work-number"><?= work_number(4) ?></span>
                 <a href="./works/himenoyu"><img src="./images/works/himenoyu.webp" alt="比咩の湯"></a>
                 <div class="work-title">比咩の湯 - 白山市</div>
+            </figure>
+            <!-- No.5 2024年7月 -->
+            <figure class="work-item">
+                <span class="work-number"><?= work_number(5) ?></span>
+                <a href="./works/himenoyu"><img src="./images/no-image.webp" alt="太陽系"></a>
+                <div class="work-title"><span style="font-style: italic;">r=a&theta;</span> &#9472; Solar System</div>
             </figure>
         </section>
     </main>

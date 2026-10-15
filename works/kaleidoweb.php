@@ -17,10 +17,16 @@ $pageCss = 'works-sub.css';
                     <h1>Kaleido Web</h1>
                     <span class="work-period">2026.09 - Present</span>
                 </div>
-                <div class="work-meta">
-                    <div class="work-role">Design, Development</div>
-                    <div class="tech-stack">HTML, CSS, JavaScript, PHP</div>
-                </div>
+                <dl class="work-meta">
+                    <div class="work-meta-item">
+                        <dt>Role</dt>
+                        <dd class="work-role" data-label="└ Role">Design, Development</dd>
+                    </div>
+                    <div class="work-meta-item">
+                        <dt>Stack</dt>
+                        <dd class="tech-stack" data-label="└ Tech Stack">HTML, CSS, JavaScript, PHP</dd>
+                    </div>
+                </dl>
             </div>
             <div class="work-description">
                 <p>本サイト。Kaleido（カレイド）のポートフォリオサイト。</p>

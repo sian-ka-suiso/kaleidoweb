@@ -15,22 +15,26 @@ $pageCss = 'works-sub.css';
             <div class="page-header">
                 <div class="work-header">
                     <h1>比咩の湯 - 白山市</h1>
-                    <span class="work-period">2026.03</span><!-- 終了している場合は YYYY.MM - YYYY.MM -->
+                    <span class="work-period">2026.03</span>
                 </div>
-                <div class="work-meta">
-                    <div class="work-role">Partial Renewal</div>
-                    <div class="tech-stack">HTML, CSS, WordPress</div>
-                </div>
+                <dl class="work-meta">
+                    <div class="work-meta-item">
+                        <dt>Role</dt>
+                        <dd class="work-role" data-label="└ Role">Site Update</dd>
+                    </div>
+                    <div class="work-meta-item">
+                        <dt>Stack</dt>
+                        <dd class="tech-stack" data-label="└ Tech Stack">HTML, CSS, WordPress</dd>
+                    </div>
+                </dl>
             </div>
             <div class="work-description">
-                <p>〇〇（作品の概要）</p>
-                <p>〇〇（担当範囲・実装した機能）</p>
-                <p>〇〇（補足・現在の状況など）</p>
+                <p>石川県の日帰り入浴施設「比咩の湯」が2026年4月にリニューアルオープンするのに伴い、ホームページの内容更新を担当。</p>
+                <p>既存のUIやデザインは大きく変更せず、営業時間の変更対応や、新たに営業を再開する「お風呂」「お食事等」の紹介セクションを新規追加。</p>
             </div>
             <!-- リンクが無い場合は該当の <a> を削除。両方無ければ div ごと削除 -->
             <div class="work-link">
-                <a href="https://〇〇" target="_blank" rel="noopener">View Live ↗</a>
-                <a href="https://github.com/〇〇" target="_blank" rel="noopener">Source Code ↗</a>
+                <a href="https://himenoyu.jp/" target="_blank" rel="noopener">View Live ↗</a>
             </div>
         </section>
         <section>

@@ -14,13 +14,19 @@ $pageCss = 'works-sub.css';
         <section>
             <div class="page-header">
                 <div class="work-header">
-                    <h1>よくある間違い ○×クイズ</h1>
+                    <h1>よくある間違い〇&#10005;クイズ</h1>
                     <span class="work-period">2024.06 - Present</span>
                 </div>
-                <div class="work-meta">
-                    <div class="work-role">Design, Development</div>
-                    <div class="tech-stack">HTML, CSS, JavaScript, PHP, MySQL</div>
-                </div>
+                <dl class="work-meta">
+                    <div class="work-meta-item">
+                        <dt>Role</dt>
+                        <dd class="work-role" data-label="└ Role">Design, Development</dd>
+                    </div>
+                    <div class="work-meta-item">
+                        <dt>Stack</dt>
+                        <dd class="tech-stack" data-label="└ Tech Stack">HTML, CSS, JavaScript, PHP, MySQL</dd>
+                    </div>
+                </dl>
             </div>
             <div class="work-description">
                 <p>高校～大学数学でつまずきやすい典型的な誤答をテーマにした、選択式のクイズWebアプリケーション。<br>金沢工業大学 数理工教育研究センターの学生スタッフ業務として開発。</p>

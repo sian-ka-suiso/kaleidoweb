@@ -17,10 +17,16 @@ $pageCss = 'works-sub.css';
                     <h1>KIT eSports Project</h1>
                     <span class="work-period">2025.04 - Present</span>
                 </div>
-                <div class="work-meta">
-                    <div class="work-role">Design, Development, Content Update</div>
-                    <div class="tech-stack">HTML, CSS, JavaScript, PHP</div>
-                </div>
+                <dl class="work-meta">
+                    <div class="work-meta-item">
+                        <dt>Role</dt>
+                        <dd class="work-role" data-label="└ Role">Design, Development, Content Update</dd>
+                    </div>
+                    <div class="work-meta-item">
+                        <dt>Stack</dt>
+                        <dd class="tech-stack" data-label="└ Tech Stack">HTML, CSS, JavaScript, PHP</dd>
+                    </div>
+                </dl>
             </div>
             <div class="work-description">
                 <p>金沢工業大学公式の課外活動団体「KIT eSports Project」の公式ホームページを制作。</p>

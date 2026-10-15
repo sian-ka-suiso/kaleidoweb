@@ -14,6 +14,10 @@ section {
     max-width: 1000px;
 }
 
+.page-header {
+    cursor: default;
+}
+
 .work-header {
     display: flex;
     justify-content: space-between;
@@ -35,28 +39,72 @@ section {
 
 .work-meta {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 15px;
+    gap: 10px 15px;
+    margin: 10px 0 0;
+    cursor: default;
+}
+
+.work-meta-item {
+    display: flex;
+    align-items: center;
+}
+
+.work-meta dt {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 .work-meta .tech-stack, .work-meta .work-role {
     display: inline-block;
     font-weight: 200;
     color: var(--color-text);
-    margin-top: 10px;
+    margin: 0;
     padding: 0 15px 1px 15px;
     background-color: rgba(255, 255, 255, 0.15);
+}
+
+.work-meta dd {
+    position: relative;
+}
+
+.work-meta dd::after {
+    content: attr(data-label);
+    content: attr(data-label) / '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--color-primary);
+    background: transparent;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.work-meta dd:hover::after {
+    opacity: 1;
 }
 
 .work-description {
     font-weight: 200;
     color: var(--color-text);
     margin-top: 60px;
+    cursor: default;
 }
 
 .work-description a {
-    /* text-decoration: none; */
     color: var(--color-primary);
+    cursor: pointer;
 }
 
 .work-description p {
@@ -96,6 +144,7 @@ section {
     margin: 0 0 20px 8px;
     padding-left: 12px;
     border-left: 4px solid var(--color-text-muted);
+    cursor: default;
 }
 
 .work-images {
@@ -106,7 +155,8 @@ section {
 }
 
 .work-window {
-    margin: 0;   /* figure の初期余白を消す */
+    margin: 0;
+    cursor: default;
 }
 
 .upper-frame {

@@ -21,6 +21,7 @@ main {
 	background: linear-gradient(15deg,rgb(123, 242, 247) 0%, rgba(9, 229, 236, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+    cursor: default;
 }
 
 .hero-subtitle {
@@ -33,4 +34,5 @@ main {
     letter-spacing: 1.6px;
     background-color: rgba(255, 255, 255, 0.15);
     color: var(--color-text);
+    cursor: default;
 }
