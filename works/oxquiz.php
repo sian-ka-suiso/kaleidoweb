@@ -78,6 +78,22 @@ $pageCss = 'works-sub.css';
                     </figcaption>
                     <img src="<?= $base ?>images/works/OXquiz/preview4.webp" alt="クエスチョン画面" class="work-screenshot">
                 </figure>
+                <!-- ５枚目 -->
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">Admin Page</span>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/OXquiz/preview6.webp" alt="管理者画面" class="work-screenshot">
+                </figure>
+                <!-- ６枚目 -->
+                <figure class="work-window">
+                    <figcaption class="upper-frame">
+                        <span class="window-tab">Admin Page</span>
+                        <?php include __DIR__ . '/../parts/window-buttons.php'; ?>
+                    </figcaption>
+                    <img src="<?= $base ?>images/works/OXquiz/preview7.webp" alt="管理者画面" class="work-screenshot">
+                </figure>
             </div>
         </section>
     </main>
