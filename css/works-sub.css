@@ -99,7 +99,39 @@ section {
         font-size: 0.8rem;
     }
     .work-meta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
         margin-top: 20px;
+    }
+    .work-meta-item {
+        display: grid;
+        grid-template-columns: 3.5em 1fr;
+        align-items: baseline;
+        gap: 4px;
+    }
+    /* 非表示用の指定を解除して、項目名を小さなラベルとして表示 */
+    .work-meta dt {
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        clip-path: none;
+        white-space: normal;
+        font-family: var(--font-roboto);
+        font-size: 0.6875rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+    }
+    .work-meta .tech-stack,
+    .work-meta .work-role {
+        padding: 0;
+        background: none;
+    }
+    /* スマホではホバーがないので、ホバー時のラベルは出さない */
+    .work-meta dd::after {
+        display: none;
     }
 }
 
@@ -144,10 +176,6 @@ section {
     transition: color 0.3s ease;
 }
 
-.work-description a:hover {
-    color: var(--color-primary);
-}
-
 .work-description p {
     margin: 12px 0;
 }
@@ -183,6 +211,7 @@ section {
 
 .work-link {
     display: flex;
+    flex-wrap: wrap;
     gap: 45px;
     justify-content: center;
     margin-top: 66px;
@@ -191,7 +220,7 @@ section {
 @media (max-width: 767px) {
     .work-link {
         margin-top: 45px;
-        gap: 15px;
+        gap: 12px 15px;
     }
 }
 
@@ -212,8 +241,11 @@ section {
     }
 }
 
-.work-link a:hover {
-    transform: translate(5px, -5px);
+/* マウス操作の環境だけで動かす（スマホでタップ後にずれたまま残るのを防ぐ） */
+@media (hover: hover) {
+    .work-link a:hover {
+        transform: translate(5px, -5px);
+    }
 }
 
 .preview-heading {
