@@ -100,6 +100,7 @@ main {
     padding-left: calc(var(--line-x) + 55px);   /* 線＋枝の分だけ右へ */
     margin: 30px 0;
     font-size: 1.25rem;
+    font-weight: 300;
 }
 
 @media (max-width: 767px) {

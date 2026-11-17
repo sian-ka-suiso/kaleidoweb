@@ -20,8 +20,12 @@ $pageCss = 'updates.css';
                         <span>Kaleido Web Launched</span>
                     </li>
                     <li>
-                        <time datetime="2026-10-13">10.16</time>
+                        <time datetime="2026-10-16">10.16</time>
                         <span>UI Redesign</span>
+                    </li>
+                    <li>
+                        <time datetime="2026-11-18">11.18</time>
+                        <span>Responsive Design</span>
                     </li>
                 </ol>
             </div>
