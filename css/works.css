@@ -7,14 +7,28 @@ main {
     margin: 150px auto 150px;
 }
 
+@media (max-width: 767px) {
+    main {
+        padding: 0 20px;
+        margin-bottom: 120px;
+    }
+}
+
 .page-title {
-    font-size: 46px;
+    font-size: 2.875rem;
     font-family: var(--font-anders);
     font-weight: 200;
     letter-spacing: 8px;
     color: var(--color-text);
     margin: 0 auto 120px;
     cursor: default;
+}
+
+@media (max-width: 767px) {
+    .page-title {
+        font-size: 2.25rem;
+        margin: 0 auto 64px;
+    }
 }
 
 .works {
@@ -31,7 +45,7 @@ main {
 
 .work-number {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.0rem;
     font-weight: 200;
     color: var(--color-text);
     font-family: var(--font-roboto);
@@ -39,6 +53,12 @@ main {
     padding-left: 2px;
     margin-bottom: 8px;
     font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 767px) {
+    .work-number {
+        font-size: 0.875rem;
+    }
 }
 
 .work-number-digit {
@@ -64,7 +84,7 @@ main {
 
 .work-title {
     width: fit-content;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     color: var(--color-text);
     letter-spacing: 1px;
@@ -72,6 +92,13 @@ main {
     padding: 0 35px 1px 35px;
     background-color: rgba(255, 255, 255, 0.15);
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .work-title {
+        font-size: 1.0rem;
+        padding: 0 20px 1px 20px;
+    }
 }
 
 /* ===== ページ表示時のアニメーション ===== */

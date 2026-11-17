@@ -52,7 +52,7 @@ header nav ul {
 }
 
 header a {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     text-decoration: none;
     color: var(--color-text);
