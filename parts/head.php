@@ -19,7 +19,7 @@ $ogImage = $ogImage ?? 'https://www.kaleidoweb.net/images/works/KaleidoWeb/previ
     <meta property="og:description" content="<?= htmlspecialchars($siteName) ?>" />
     <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@kaleidoweb" />
     <link rel="icon" type="image/png" href="<?= $base ?>images/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
