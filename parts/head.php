@@ -9,7 +9,7 @@
 $base = $base ?? '';
 $siteName = "Kaleido's Portfolio Site";
 $fullTitle = isset($pageTitle) ? "{$pageTitle}｜{$siteName}" : $siteName;
-$ogImage = $ogImage ?? 'https://www.kaleidoweb.net/images/kaleidoweb_ss.webp';
+$ogImage = $ogImage ?? 'https://www.kaleidoweb.net/images/works/KaleidoWeb/preview1.webp';
 ?>
 <head>
     <meta charset="UTF-8">
