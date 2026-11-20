@@ -13,29 +13,31 @@ $pageCss = 'updates.css';
         <h1 class="page-title">Updates</h1>
         <section class="timeline">
             <div class="timeline-year">
+                <!-- <div class="timeline-year">
+                    <h2 class="year">2027</h2>
+                    <ol class="events">
+                        <li>
+                            <time datetime="">01.01</time>
+                            <span>Text</span>
+                        </li>
+                    </ol>
+                </div> -->
                 <h2 class="year">2026</h2>
                 <ol class="events">
                     <li>
-                        <time datetime="2026-09-22">09.22</time>
-                        <span>Kaleido Web Launched</span>
+                        <time datetime="2026-11-18">11.18</time>
+                        <span>Responsive Design</span>
                     </li>
                     <li>
                         <time datetime="2026-10-16">10.16</time>
                         <span>UI Redesign</span>
                     </li>
                     <li>
-                        <time datetime="2026-11-18">11.18</time>
-                        <span>Responsive Design</span>
+                        <time datetime="2026-09-22">09.22</time>
+                        <span>Kaleido Web Launched</span>
                     </li>
                 </ol>
             </div>
-            <!-- <div class="timeline-year">
-                <h2 class="year">2027</h2>
-                <ol class="events">
-                    <li><time datetime=""></time></li>
-                    <li><time datetime=""></time></li>
-                </ol>
-            </div> -->
         </section>
     </main>
     <?php include 'parts/footer.php'; ?>
